@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: #131313;
+    background-color: #000000;
     font-family: 'Inter', sans-serif;
 }
 
@@ -43,13 +43,19 @@ a {
 }
 
 .nav-btn {
+    width: fit-content;
     color: white;
     background-color: #88bcdd;
+    border: solid 2px #88bcdd;
     padding: 10px 20px;
     border-radius: 3px;
 }
 
-/* Mobile Styles */
+.nav-btn:hover {
+    background-color: transparent;
+    border: solid 2px #88bcdd;
+    color: #88bcdd;
+}
 
 .hamburger-icon {
     display: block; /* Show hamburger icon initially */
@@ -75,7 +81,33 @@ a {
     padding-top: 0; /* Remove top padding on desktop */
 }
 
-/* Mobile Styles */
+/* INTRODUCTION */
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-container p, h1 {
+    color: white;
+}
+
+.intro-body {
+    width: 75%;
+    border-radius: 1rem;
+    border: dashed 2px white;
+    padding: 3rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+ 
+.intro-title p, h1 {
+    margin: 0;
+}
+
+/* MX-WIDTH */
 @media (max-width: 768px) {
     .nav-list {
         display: flex; /* Keep display flex but transform it out of view initially */
@@ -111,10 +143,50 @@ a {
     .hamburger-icon {
         display: block; /* Show hamburger icon on mobile */
     }
+
+    .intro-container {
+        width: 100%;
+        height: 500px;
+        background-image: url('img/circuit-background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .intro-body {
+        padding: 2rem;
+    }
+    
+    .intro-title p {
+        font-size: 12px;
+    }
+    
+    .intro-text {
+        margin-top: 20px;
+    }
 }
 
+/* MIN-WIDTH */
 @media (min-width: 769px) {
     .hamburger-icon, .close-icon {
         display: none; /* Hide both by default */
+    }
+
+    .intro-container {
+        width: 100%;
+        height: 500px;
+        background-image: url('img/circuit-background.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .intro-title {
+        font-size: 25px;
+    }
+    
+    .intro-text {
+        margin-top: 20px;
+        font-size: 20px;
     }
 }
