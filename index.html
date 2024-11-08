@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TAMUSA - ACM</title>
+    <link rel="stylesheet" href="app.css">
 </head>
 <body>
-    <h1>WELCOME TO TAMUSA ACM!</h1>
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">
+                <img class="nav-img" src="img/acm-logo.jpg" alt="">
+            </div>
+            
+            <!-- Hamburger icon for mobile -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </div>
+
+            <!-- Collapsible menu list -->
+            <div class="nav-list" id="navMenu">
+                <!-- Close icon for mobile -->
+            <div class="close-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </div>
+                <ul class="nav-items">
+                    <li class="nav-item active"><a href="">About</a></li>
+                    <li class="nav-item"><a href="">Team</a></li>
+                    <li class="nav-item"><a href="">Events</a></li>
+                    <li class="nav-item"><a href="">Contact</a></li>
+                    <li class="nav-item"><a class="nav-btn" href="#">Become a member</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            const hamburgerIcon = document.querySelector('.hamburger-icon');
+            const closeIcon = document.querySelector('.close-icon');
+
+            navMenu.classList.toggle('active');
+            hamburgerIcon.classList.toggle('hidden');
+            closeIcon.classList.toggle('visible');
+        }
+    </script>
 </body>
 </html>
