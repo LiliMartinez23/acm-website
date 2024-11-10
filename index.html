@@ -145,11 +145,20 @@
         //     });
         // });
 
-        document.querySelectorAll('.flip-card').forEach(card => {
-            card.addEventListener('click', () => {
-                card.classList.toggle('flipped');
-            });
+        // Flip the card when it's clicked
+    document.querySelectorAll('.flip-card').forEach(card => {
+        card.addEventListener('click', (event) => {
+            event.stopPropagation(); // Prevent the click from bubbling up to the document
+            card.classList.toggle('flipped');
         });
+    });
+
+    // Flip the card back when clicking outside of it
+    document.addEventListener('click', () => {
+        document.querySelectorAll('.flip-card.flipped').forEach(card => {
+            card.classList.remove('flipped');
+        });
+    });
     </script>
 </body>
 </html>
