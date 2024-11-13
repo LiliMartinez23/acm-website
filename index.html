@@ -128,6 +128,32 @@
         </div>
      </footer>
 
+     <!-- MODAL -->
+      <!-- <button class="modal-btn" id="openModalButton">Launch Modal</button> -->
+      <!-- MODAL STRUCTURE -->
+       <!-- <div class="modal" id="customModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="modal-title">
+                        <h1 class="title">Modal Title</h1>
+                        <button class="close-modal-btn" id="closeModalButton" type="button" aria-label="Close">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Modal body content goes here...</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="modal-footer-btn" id="closeFooterButton" type="button">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </div> -->
+
     <script>
         function toggleMenu() {
             const navMenu = document.getElementById('navMenu');
@@ -138,27 +164,41 @@
             hamburgerIcon.classList.toggle('hidden');
             closeIcon.classList.toggle('visible');
         }
-
-        // document.querySelectorAll('.flip-card').forEach(card => {
-        //     card.addEventListener('click', () => {
-        //         card.classList.toggle('flipped');
-        //     });
-        // });
-
+        
         // Flip the card when it's clicked
-    document.querySelectorAll('.flip-card').forEach(card => {
-        card.addEventListener('click', (event) => {
-            event.stopPropagation(); // Prevent the click from bubbling up to the document
-            card.classList.toggle('flipped');
+        document.querySelectorAll('.flip-card').forEach(card => {
+            card.addEventListener('click', (event) => {
+                event.stopPropagation(); // Prevent the click from bubbling up to the document
+                card.classList.toggle('flipped');
+            });
         });
-    });
 
-    // Flip the card back when clicking outside of it
-    document.addEventListener('click', () => {
-        document.querySelectorAll('.flip-card.flipped').forEach(card => {
-            card.classList.remove('flipped');
+        // Flip the card back when clicking outside of it
+        document.addEventListener('click', () => {
+            document.querySelectorAll('.flip-card.flipped').forEach(card => {
+                card.classList.remove('flipped');
+            });
         });
-    });
+
+        // MODAL
+        // document.addEventListener("DOMContentLoaded", function() {
+        //     const openModalButton = document.getElementById("openModalButton");
+        //     const closeModalButton = document.getElementById("closeModalButton");
+        //     const closeFooterButton = document.getElementById("closeFooterButton");
+        //     const customModal = document.getElementById("customModal");
+
+        //     openModalButton.addEventListener("click", function() {
+        //         customModal.style.display = "flex";
+        //     });
+
+        //     closeModalButton.addEventListener("click", function() {
+        //         customModal.style.display = "none";
+        //     });
+
+        //     closeFooterButton.addEventListener("click", function() {
+        //         customModal.style.display = "none";
+        //     });
+        // })
     </script>
 </body>
 </html>
