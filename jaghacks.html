@@ -3,134 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TAMUSA - ACM</title>
+    <title>Document</title>
     <link rel="stylesheet" href="app.css">
 </head>
 <body>
-
-    <div class="background-img">
-        <header>
-            <nav class="nav">
-                <div class="nav-logo">
-                    <a href="index.html"><img class="nav-img" src="img/acm-logo-transparent.png" alt=""></a>
-                </div>
-                
-                <!-- Hamburger icon for mobile -->
-                <div class="hamburger-icon" onclick="toggleMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                        <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-                    </svg>
-                </div>
-
-                <!-- Collapsible menu list -->
-                <div class="nav-list" id="navMenu">
-                    <!-- Close icon for mobile -->
-                <div class="close-icon" onclick="toggleMenu()">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-                        <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
-                    </svg>
-                </div>
-                    <ul class="nav-items">
-                        <li><a class="nav-item active" href="">Home</a></li>
-                        <li><a class="nav-item" href="team.html">Team</a></li>
-                        <li><a class="nav-item" href="jaghacks.html">JagHacks</a></li>
-                        <li><a class="nav-item" href="">Events</a></li>
-                        <li><a class="nav-item" href="">Contact</a></li>
-                        <li class="nav-item"><a class="nav-btn" href="https://jagsync.tamusa.edu/organization/acm">Become a member</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
-
-        <!-- INTRODUCTION -->
-        <div class="intro-container">
-            <div class="intro-body">
-                <div class="intro-title">
-                    <p>Texas A&M University-San Antonio</p>
-                    <h1>Association for Computing Machinery</h1>
-                </div>
-                <p class="intro-text">
-                    The Association for Computing Machinery at 
-                    Texas A&M University-San Antonio connects 
-                    students to grow, network, and gain hands-on 
-                    experience in computing together.
-                </p>
-                <a class="nav-btn" href="https://jagsync.tamusa.edu/organization/acm">Become a member</a>
+    <header>
+        <nav class="nav">
+            <div class="nav-logo">
+                <a href="index.html"><img class="nav-img" src="img/acm-logo-transparent.png" alt=""></a>
             </div>
+            
+            <!-- Hamburger icon for mobile -->
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </div>
+
+            <!-- Collapsible menu list -->
+            <div class="nav-list" id="navMenu">
+                <!-- Close icon for mobile -->
+            <div class="close-icon" onclick="toggleMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                    <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+                </svg>
+            </div>
+                <ul class="nav-items">
+                    <li><a class="nav-item" href="index.html">Home</a></li>
+                    <li><a class="nav-item" href="team.html">Team</a></li>
+                    <li><a class="nav-item active" href="jaghacks.html">JagHacks</a></li>
+                    <li><a class="nav-item" href="">Events</a></li>
+                    <li><a class="nav-item" href="">Contact</a></li>
+                    <li class="nav-item"><a class="nav-btn" href="https://jagsync.tamusa.edu/organization/acm">Become a member</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="jaghacks-container">
+        <div class="jaghacks-title">
+            <h1>TAMUSAs Annual Hackathon JagHacks</h1>
         </div>
+        <div class="jaghacks-text">
+            <p>
+                JagHacks, Texas A&M University-San Antonio's annual hackathon, 
+                open to all students and majors-no experience needed. Join 
+                the fun this Spring 2025!
+            </p>
+            <div class="jaghacks-btns">
+                <a class="jaghacks-btn" href="https://jagsync.tamusa.edu/organization/acm/roster">Contact Us</a>
+                <a class="jaghacks-white-btn" href="https://jagsync.tamusa.edu/organization/acm/gallery/album/370105">View Gallery</a>
+            </div>
+           </div>
     </div>
 
-    <!-- CARDS -->
-    <div class="cards">
-        <h1>Come hangout with us!</h1>
-        <p>Upcoming events</p>
-        <div class="card-container">
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>REACT Workshop</h2>
-                    <!-- <img src="img/TAMUSA-logo.png" alt="Avatar"> -->
-                </div>
-                <div class="flip-card-back">
-                    <h3>WEDNESDAY</h3>
-                    <p>November 6th, 2024</p>
-                    <p>STEM 256</p>
-                    <a class="card-btn" href="#">Learn More</a>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>General Meeting</h2>
-                </div>
-                <div class="flip-card-back">
-                    <h3>TUESDAY</h3>
-                    <p>November 5th, 2024</p>
-                    <p>STEM 256</p>
-                    <a class="card-btn" href="#">Learn More</a>
-                </div>
-                </div>
-            </div>
-            <div class="flip-card">
-                <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <h2>Git Workshop</h2>
-                </div>
-                <div class="flip-card-back">
-                    <h3>WEDNESDAY</h3>
-                    <p>October 30th, 2024</p>
-                    <p>STEM 256</p>
-                    <a class="card-btn" href="#">Learn More</a>
-                </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- JAGHACKS -->
-     <div class="hack-container">
-        <div class="hack">
-            <div class="jag-hacks">
-                <h1>Join us at JagHacks!</h1>
-                <p class="hack-text">
-                    Join us at JagHacks, the exciting hackathon 
-                    hosted by Texas A&M University-San Antonio! 
-                    Open to students from all majors, it's a night 
-                    of creativity, collaboration, and fun events. 
-                    Whether you're a coding pro or a beginner, 
-                    there's something for everyone—come make great 
-                    memories and innovative ideas!
-                </p>
-                <a class="jag-btn" href="https://jagsync.tamusa.edu/organization/acm/roster">Contact Us</a>
-            </div>
-            <div class="jag-hacks-img">
-                <img src="img/students-working-on-computer.jpg" alt="">
-            </div>
-        </div>
-     </div>
-
-     <footer>
+    <footer>
         <div class="footer">
             <a href="https://discord.com/invite/KAbvWkgF"><svg xmlns="http://www.w3.org/2000/svg" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 512 365.467"><path fill="#fff" d="M378.186 365.028s-15.794-18.865-28.956-35.099c57.473-16.232 79.41-51.77 79.41-51.77-17.989 11.846-35.099 20.182-50.454 25.885-21.938 9.213-42.997 14.917-63.617 18.866-42.118 7.898-80.726 5.703-113.631-.438-25.008-4.827-46.506-11.407-64.494-18.867-10.091-3.947-21.059-8.774-32.027-14.917-1.316-.877-2.633-1.316-3.948-2.193-.877-.438-1.316-.878-1.755-.878-7.898-4.388-12.285-7.458-12.285-7.458s21.06 34.659 76.779 51.331c-13.163 16.673-29.395 35.977-29.395 35.977C36.854 362.395 0 299.218 0 299.218 0 159.263 63.177 45.633 63.177 45.633 126.354-1.311 186.022.005 186.022.005l4.388 5.264C111.439 27.645 75.461 62.305 75.461 62.305s9.653-5.265 25.886-12.285c46.945-20.621 84.236-25.885 99.592-27.64 2.633-.439 4.827-.878 7.458-.878 26.763-3.51 57.036-4.387 88.624-.878 41.68 4.826 86.43 17.111 132.058 41.68 0 0-34.66-32.906-109.244-55.281l6.143-7.019s60.105-1.317 122.844 45.628c0 0 63.178 113.631 63.178 253.585 0-.438-36.854 62.739-133.813 65.81l-.001.001zm-43.874-203.133c-25.006 0-44.75 21.498-44.75 48.262 0 26.763 20.182 48.26 44.75 48.26 25.008 0 44.752-21.497 44.752-48.26 0-26.764-20.182-48.262-44.752-48.262zm-160.135 0c-25.008 0-44.751 21.498-44.751 48.262 0 26.763 20.182 48.26 44.751 48.26 25.007 0 44.75-21.497 44.75-48.26.439-26.763-19.742-48.262-44.75-48.262z"/></svg></a>
             <a href="https://www.instagram.com/acm.tamusa/"><svg height="100%" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 600 600" width="100%" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:serif="http://www.serif.com/" xmlns:xlink="http://www.w3.org/1999/xlink"><g transform="matrix(1.01619,0,0,1.01619,44,43.8384)"><path d="M251.921,0.159C183.503,0.159 174.924,0.449 148.054,1.675C121.24,2.899 102.927,7.157 86.902,13.385C70.336,19.823 56.287,28.437 42.282,42.442C28.277,56.447 19.663,70.496 13.225,87.062C6.997,103.086 2.739,121.399 1.515,148.213C0.289,175.083 0,183.662 0,252.08C0,320.497 0.289,329.076 1.515,355.946C2.739,382.76 6.997,401.073 13.225,417.097C19.663,433.663 28.277,447.712 42.282,461.718C56.287,475.723 70.336,484.337 86.902,490.775C102.927,497.002 121.24,501.261 148.054,502.484C174.924,503.71 183.503,504 251.921,504C320.338,504 328.917,503.71 355.787,502.484C382.601,501.261 400.914,497.002 416.938,490.775C433.504,484.337 447.553,475.723 461.559,461.718C475.564,447.712 484.178,433.663 490.616,417.097C496.843,401.073 501.102,382.76 502.325,355.946C503.551,329.076 503.841,320.497 503.841,252.08C503.841,183.662 503.551,175.083 502.325,148.213C501.102,121.399 496.843,103.086 490.616,87.062C484.178,70.496 475.564,56.447 461.559,42.442C447.553,28.437 433.504,19.823 416.938,13.385C400.914,7.157 382.601,2.899 355.787,1.675C328.917,0.449 320.338,0.159 251.921,0.159ZM251.921,45.551C319.186,45.551 327.154,45.807 353.718,47.019C378.28,48.14 391.619,52.244 400.496,55.693C412.255,60.263 420.647,65.723 429.462,74.538C438.278,83.353 443.737,91.746 448.307,103.504C451.757,112.381 455.861,125.72 456.981,150.282C458.193,176.846 458.45,184.814 458.45,252.08C458.45,319.345 458.193,327.313 456.981,353.877C455.861,378.439 451.757,391.778 448.307,400.655C443.737,412.414 438.278,420.806 429.462,429.621C420.647,438.437 412.255,443.896 400.496,448.466C391.619,451.916 378.28,456.02 353.718,457.14C327.158,458.352 319.191,458.609 251.921,458.609C184.65,458.609 176.684,458.352 150.123,457.14C125.561,456.02 112.222,451.916 103.345,448.466C91.586,443.896 83.194,438.437 74.378,429.621C65.563,420.806 60.103,412.414 55.534,400.655C52.084,391.778 47.98,378.439 46.859,353.877C45.647,327.313 45.391,319.345 45.391,252.08C45.391,184.814 45.647,176.846 46.859,150.282C47.98,125.72 52.084,112.381 55.534,103.504C60.103,91.746 65.563,83.353 74.378,74.538C83.194,65.723 91.586,60.263 103.345,55.693C112.222,52.244 125.561,48.14 150.123,47.019C176.687,45.807 184.655,45.551 251.921,45.551Z" style="fill:rgb(255, 255, 255);fill-rule:nonzero;"/><path d="M251.921,336.053C205.543,336.053 167.947,298.457 167.947,252.08C167.947,205.702 205.543,168.106 251.921,168.106C298.298,168.106 335.894,205.702 335.894,252.08C335.894,298.457 298.298,336.053 251.921,336.053ZM251.921,122.715C180.474,122.715 122.556,180.633 122.556,252.08C122.556,323.526 180.474,381.444 251.921,381.444C323.367,381.444 381.285,323.526 381.285,252.08C381.285,180.633 323.367,122.715 251.921,122.715Z" style="fill:rgb(255, 255, 255);fill-rule:nonzero;"/><path d="M416.627,117.604C416.627,134.3 403.092,147.834 386.396,147.834C369.701,147.834 356.166,134.3 356.166,117.604C356.166,100.908 369.701,87.374 386.396,87.374C403.092,87.374 416.627,100.908 416.627,117.604Z" style="fill:rgb(255, 255, 255);fill-rule:nonzero;"/></g></svg></a>

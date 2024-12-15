@@ -349,6 +349,65 @@ h3 {
     font-family: 'Courier New', monospace;
 }
 
+/* JAGHACKS */
+.jaghacks-container {
+    padding: 2rem;
+    background-color: #e6e6e6;
+}
+
+.jaghacks-title h1 {
+    margin: 1rem;
+    color: black;
+}
+
+.jaghacks-text {
+    margin: 1rem;
+}
+
+.jaghacks-text p {
+    padding-bottom: 1rem;
+}
+
+.jaghacks-btn {
+    margin-top: 1rem;
+    width: fit-content;
+    color: white;
+    background-color: #000000;
+    border: solid 2px #000000;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.jaghacks-btn:hover {
+    margin-top: 1rem;
+    width: fit-content;
+    color: black;
+    background-color: #fff;
+    border: solid 2px #000000;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.jaghacks-white-btn {
+    margin-top: 1rem;
+    width: fit-content;
+    color: black;
+    background-color: #fff;
+    border: solid 2px #000000;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.jaghacks-white-btn:hover {
+    margin-top: 1rem;
+    width: fit-content;
+    color: white;
+    background-color: #000;
+    border: solid 2px #000000;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
 /* FOOTER */
 .footer {
     margin: 0.5rem;
@@ -369,11 +428,28 @@ h3 {
 @media (max-width: 380px) {
     .jag-hacks-img img {
         margin: 3rem 0 1rem 0;
-        border: dashed 2px white;
+        border: dashed 2px black;
         padding: 1rem;
         border-radius: 50%;
         width: 18rem !important;
         height: auto;
+    }
+
+    .jaghacks-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .jaghacks-btn {
+        text-align: center;
+        width: 13rem;
+    }
+
+    .jaghacks-white-btn {
+        text-align: center;
+        width: 13rem;
     }
 }
 
@@ -451,7 +527,7 @@ h3 {
 
     .jag-hacks-img img {
         margin: 3rem 0 1rem 0;
-        border: dashed 2px white;
+        border: dashed 2px black;
         padding: 1rem;
         border-radius: 50%;
         width: 20rem;
