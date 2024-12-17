@@ -1,12 +1,3 @@
-
-/* Background image for header and introdcution containers */
-.background-img {
-    background-image: url('/img/circuit-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 /* Navbar for header */
 .nav {
     width: 100%;
