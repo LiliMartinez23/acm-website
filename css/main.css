@@ -1,3 +1,7 @@
+@import url('header.css');
+@import url('footer.css');
+@import url('team.css');
+
 body {
     margin: 0;
     background-color: #000000;
@@ -9,109 +13,12 @@ a {
     color: white;
 }
 
-h1 {
+h1, h2, h3 {
     color: white;
+    margin: 0;
 }
 
-h3 {
-    margin-bottom: 1rem;
-    font-size: 22px;
-    font-family: "Courier Prime", monospace;
-}
-
-/* BACKGROUND IMAGE */
-.background-img {
-    background-image: url('/img/circuit-background.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* NAVBAR */
-.nav {
-    width: 100%;
-    height: fit-content;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.nav-logo {
-    padding: 0.3rem;
-}
-
-.nav-logo img {
-    width: 4rem;
-}
-
-.nav-img {
-    width: 50px;
-    padding-left: 2rem;
-}
-
-.nav-items {
-    padding-right: 2rem;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-item {
-    padding: 0 10px;
-}
-
-.nav-item:hover {
-    color: #88bcdd;
-    text-decoration: underline;
-}
-
-.active {
-    color: #88bcdd;
-    font-weight: 700;
-}
-
-.nav-btn {
-    width: fit-content;
-    color: white;
-    background-color: #88bcdd;
-    border: solid 2px #88bcdd;
-    padding: 10px 20px;
-    border-radius: 3px;
-}
-
-.nav-btn:hover {
-    background-color: transparent;
-    color: #88bcdd;
-}
-
-.hamburger-icon {
-    display: block;
-    cursor: pointer;
-    padding-right: 1.5rem;
-}
-
-.close-icon {
-    cursor: pointer;
-    text-align: end;
-    padding-right: 1rem;
-}
-
-.nav-list {
-    display: flex; /* Show links by default */
-    flex-direction: row; /* Row layout on desktop */
-    position: static; /* Not fixed on desktop */
-    height: auto; /* Adjust height for desktop */
-    width: auto; /* Adjust width for desktop */
-    background-color: transparent; /* Transparent on desktop */
-    box-shadow: none; /* Remove shadow on desktop */
-    padding-top: 0; /* Remove top padding on desktop */
-}
-
-/* INTRODUCTION */
+/* Introduction container */
 .intro-container {
     background-color: transparent;
     display: flex;
@@ -129,11 +36,6 @@ h3 {
     display: flex;
     flex-direction: column;
 }
- 
-.intro-title h1, h2 {
-    margin: 0;
-    color: white;
-}
 
 .intro-title h1 {
     font-size: 20px;
@@ -146,10 +48,11 @@ h3 {
 
 .intro-text {
     color: white;
+    margin: 0 0 20px;
     font-family: "Courier Prime", monospace;
 }
 
-/* CARD */
+/* Cards under introduction container */
 .cards {
     padding: 3rem;
     text-align: center;
@@ -230,6 +133,13 @@ h3 {
     transform: rotateY(180deg);
 }
 
+.flip-card-back h3 {
+    color: black;
+    margin-bottom: 1rem;
+    font-size: 22px;
+    font-family: "Courier Prime", monospace;
+}
+
 .flip-card-back p {
     color: black;
     margin: 0;
@@ -251,6 +161,7 @@ h3 {
     border: solid 2px #000000;
 }
 
+/* JagHack container under card container */
 .hack-container {
     background-color: #e6e6e6;
     border-radius: 1rem;
@@ -309,23 +220,7 @@ h3 {
     height: auto;
 }
 
-/* FOOTER */
-.footer {
-    margin: 0.5rem;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items:center;
-}
-
-.footer svg {
-    width: 2rem;
-    height: auto;
-    padding: 5px;
-}
-
-/* MAX-WIDTH */
+/* Media screens for tablet and mobile devices */
 @media (max-width: 380px) {
     .jag-hacks-img img {
         margin: 3rem 0 1rem 0;
@@ -392,7 +287,7 @@ h3 {
     }
     
     .intro-text {
-        margin: 20px 0 10px;
+        margin: 0 0 20px;
     }
 
     .card-container {
@@ -435,7 +330,6 @@ h3 {
     }
     
     .intro-text {
-        margin: 20px 0 10px;
         font-size: 20px;
     }
 

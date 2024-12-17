@@ -1,0 +1,92 @@
+
+/* Background image for header and introdcution containers */
+.background-img {
+    background-image: url('/img/circuit-background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navbar for header */
+.nav {
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    padding: 0.3rem;
+}
+
+.nav-logo img {
+    width: 4rem;
+}
+
+.nav-img {
+    width: 50px;
+    padding-left: 2rem;
+}
+
+.nav-items {
+    padding-right: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item {
+    padding: 0 10px;
+}
+
+.nav-item:hover {
+    color: #88bcdd;
+    text-decoration: underline;
+}
+
+.active {
+    color: #88bcdd;
+    font-weight: 700;
+}
+
+.nav-btn {
+    width: fit-content;
+    color: white;
+    background-color: #88bcdd;
+    border: solid 2px #88bcdd;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.nav-btn:hover {
+    background-color: transparent;
+    color: #88bcdd;
+}
+
+.hamburger-icon {
+    display: block;
+    cursor: pointer;
+    padding-right: 1.5rem;
+}
+
+.close-icon {
+    cursor: pointer;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+.nav-list {
+    display: flex; /* Show links by default */
+    flex-direction: row; /* Row layout on desktop */
+    position: static; /* Not fixed on desktop */
+    height: auto; /* Adjust height for desktop */
+    width: auto; /* Adjust width for desktop */
+    background-color: transparent; /* Transparent on desktop */
+    box-shadow: none; /* Remove shadow on desktop */
+    padding-top: 0; /* Remove top padding on desktop */
+}
