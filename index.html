@@ -12,16 +12,16 @@
             <img src="img/acm-sc-logo.jpg" class="w-15 h-auto" alt="">
 
             <nav class="hidden md:flex items-center gap-6">
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">About</a>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">Events</a>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">JagHacks</a>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">Resources</a>
+                <a href="index.html" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">Home</a>
+                <a href="https://jagsync.tamusa.edu/organization/acm" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">About</a>
+                <a href="https://jagsync.tamusa.edu/organization/acm" class="text-gray-600 hover:text-blue-400 transition cursor-pointer">Events</a>
             </nav>
 
-            <button class="bg-blue-400 text-white font-semibold px-5 py-2 rounded-lg hover:bg-transparent hover:text-blue-400 border border-blue-400 transition cursor-pointer">
-                Become a Member
-            </button>
+            <a href="https://jagsync.tamusa.edu/organization/acm">
+                <button class="bg-blue-400 text-white font-semibold px-5 py-2 rounded-lg hover:bg-transparent hover:text-blue-400 border border-blue-400 transition cursor-pointer">
+                    Become a Member
+                </button>
+            </a>
         </div>
     </header>
 
@@ -30,15 +30,23 @@
         <section class="mb-20 grid md:grid-cols-2 gap-10 items-center">
             <div>
                 <h2 class="text-4xl font-bold text-gray-900 mb-4">Association for Computing Machinery</h2>
-                <p class="text-blue-400 font-semibold mb-6">Student Chapter</p>
+                <p class="text-pink-600 font-semibold mb-6">Student Chapter</p>
 
                 <p text-gray-600 max-w-xl>
                     ACM Student Chapter is organized to serve students for academic, professional, and social purposes at Texas A&M University-San Antonio.
                 </p>
 
                 <div class="flex flex-row gap-3 mt-3">
-                    <button class="bg-blue-400 text-white font-semibold px-5 py-2 rounded-lg hover:bg-transparent hover:text-blue-400 border border-blue-400 transition cursor-pointer">Contact Us</button>
-                    <button class="border border-blue-400 text-blue-400 font-semibold px-5 py-2 rounded-lg hover:text-white hover:bg-blue-400 transition cursor-pointer">Events</button>
+                    <a href="https://jagsync.tamusa.edu/organization/acm">
+                        <button class="bg-blue-400 text-white font-semibold px-5 py-2 rounded-lg hover:bg-transparent hover:text-blue-400 border border-blue-400 transition cursor-pointer">
+                            Contact Us
+                        </button>
+                    </a>
+                    <a href="https://jagsync.tamusa.edu/organization/acm">
+                        <button class="border border-blue-400 text-blue-400 font-semibold px-5 py-2 rounded-lg hover:text-white hover:bg-blue-400 transition cursor-pointer">
+                            Events
+                        </button>
+                    </a>
                 </div>
             </div>
 
@@ -49,10 +57,14 @@
 
         <!-- About -->
         <section class="mb-20">
-            <div class="bg-blue-200 p-6 rounded-xl">
-                <h3 class="text-lg font-bold">About ACM Student Chapter</h3>
-
-                <p>By creating a community among students within the Computing and Cyber Security Department and anyone else interested in technology, we welcome all students interested in solving real-world problems using applied computing skills.</p>
+            <div class="bg-blue-200 p-8 rounded-xl">
+                <h3 class="text-2xl font-bold mb-5">About ACM Student Chapter</h3>
+                <p>
+                    By creating a community among students within the Computing and Cyber
+                    Security Department and anyone else interested in technology, we
+                    welcome all students interested in solving real-world problems using
+                    applied computing skills.
+                </p>
             </div>
             <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-5">
                 <img src="img/acm-sc-hackutd-group-2.jpg" class="rounded-xl" alt="">
@@ -62,32 +74,53 @@
 
         <!-- Sub Organizations -->
         <section class="mb-20">
-            <div>
-                <h3 class="text-lg font-bold">Sub Organizations</h3>
+            <div class="mb-5">
+                <h3 class="text-2xl font-bold">Sub Organizations</h3>
+            </div>
+
+            <!-- ACM-W -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex flex-col justify-center">
+                    <h3 class="text-xl font-bold text-pink-600 mb-5">ACM-W</h3>
+                    <p>
+                        ACM-W is our sister organization dedicated to supporting and empowering
+                        women in computing. Through mentorship, networking, and community-building,
+                        ACM-W fosters an inclusive environment where all identities are valued
+                        and encouraged to thrive. By uplifting diverse voices, we aim to make
+                        technology a field where everyone belongs.
+                    </p>
+                    <a href="https://www.instagram.com/acmw.tamusa/">
+                        <button class="mt-5 bg-blue-400 text-white font-semibold px-5 py-2 rounded-lg hover:bg-transparent hover:text-blue-400 border border-blue-400 transition cursor-pointer">
+                            Follow Us
+                        </button>
+                    </a>
+                </div>
+                <div class="flex justify-center">
+                    <img src="img/acm-sc-acm-w.png" alt="" class="w-100 h-auto">
+                </div>
             </div>
         </section>
-            <!-- ACM-W -->
-            <!-- Wicys -->
 
         <!-- Biggest Events -->
         <section class="mb-20">
             <div>
-                <h3 class="text-lg font-bold">Biggest Events</h3>
+                <h3 class="text-2xl font-bold mb-5">Biggest Events</h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col justify-center">
+                    <img src="img/acm-sc-jaghacks.jpg" class="w-full h-auto rounded-lg">
+                    <h3 class="text-xl font-bold text-pink-600 text-center mt-5">JagHacks</h3>
+                </div>
+                <div class="flex flex-col  justify-center">
+                    <img src="img/acm-sc-lights-of-esperanza.jpg" class="w-full h-auto rounded-lg">
+                    <h3 class="text-xl font-bold text-pink-600 text-center mt-5">Lights of Esperanza</h3>
+                </div>
+                <div class="flex flex-col  justify-center">
+                    <img src="img/acm-sc-fdc.jpg" class="w-full h-auto rounded-lg">
+                    <h3 class="text-xl font-bold text-pink-600 text-center mt-5">Festival De Cascarones</h3>
+                </div>
             </div>
         </section>
-            <!-- JagHacks -->
-            <!-- Lights of Esperanza -->
-            <!-- Festival de Cascarones -->
-
-        <!-- Upcoming Events -->
-        <section class="mb-20">
-            <div>
-                <h3 class="text-lg font-bold">Upcoming Events & Workshops</h3>
-            </div>
-        </section>
-            <!-- Workshops -->
-            <!-- General Meetings -->
-            <!-- Events -->
     </main>
 
     <!-- Footer -->
@@ -113,26 +146,20 @@
 
             <ul class="space-y-2">
                 <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
+                <a href="index.html" class="text-gray-600 hover:text-blue-400 transition">
                     Home
                 </a>
                 </li>
 
                 <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
-                    Events
+                <a href="https://jagsync.tamusa.edu/organization/acm" class="text-gray-600 hover:text-blue-400 transition">
+                    About
                 </a>
                 </li>
 
                 <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
-                    JagHacks
-                </a>
-                </li>
-
-                <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
-                    Resources
+                <a href="https://jagsync.tamusa.edu/organization/acm/gallery" class="text-gray-600 hover:text-blue-400 transition">
+                    Gallery
                 </a>
                 </li>
             </ul>
@@ -145,19 +172,19 @@
 
             <ul class="space-y-2">
                 <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
+                <a href="https://discord.gg/q6SBqbaJP4" class="text-gray-600 hover:text-blue-400 transition">
                     Discord
                 </a>
                 </li>
 
                 <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
+                <a href="https://www.instagram.com/acm.tamusa/" class="text-gray-600 hover:text-blue-400 transition">
                     Instagram
                 </a>
                 </li>
 
                 <li>
-                <a href="#" class="text-gray-600 hover:text-blue-400 transition">
+                <a href="https://www.linkedin.com/company/acm-tamusa/posts/?feedView=all" class="text-gray-600 hover:text-blue-400 transition">
                     LinkedIn
                 </a>
                 </li>
