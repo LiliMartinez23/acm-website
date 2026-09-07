@@ -127,38 +127,55 @@
             <div>
                 <h3 class="text-2xl font-bold mb-5">Biggest Events</h3>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="flex flex-col justify-center">
-                    <img src="img/acm-sc-jaghacks.jpg" class="w-full h-auto rounded-lg">
-                    <h3 class="text-lg font-semibold text-pink-600 text-center mt-5">JagHacks</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <div class="flex flex-col gap-3">
+                    <!-- JagHacks -->
+                    <button
+                        class="event-tab w-full text-left border border-gray-300 rounded-lg px-5 py-4 font-semibold hover:bg-gray-100 transition"
+                        data-title="JagHacks"
+                        data-image="img/acm-sc-group-photo.jpg"
+                        data-description="JagHacks is ACM's annual hackathon at Texas A&M University-San Antonio where students collaborate to build innovative software, web applications, mobile apps, cybersecurity projects, artificial intelligence solutions, and other technology projects while gaining valuable teamwork and problem-solving experience.">
+                        <div class="flex items-center justify-between">
+                            JagHacks <span class="event-arrow">+</span>
+                        </div>
+                    </button>
+
+                    <!-- Lights of Esperanza -->
+                    <button 
+                        class="event-tab w-full text-left border border-gray-300 rounded-lg px-5 py-4 font-semibold hover:bg-gray-100 transition"
+                        data-title="Lights of Esperanza"
+                        data-image="img/acm-sc-lights-of-esperanza.jpg"
+                        data-description="ACM members volunteer at Lights of Esperanza to support the local San Antonio community while building leadership, teamwork, and service experience.">
+                        <div class="flex items-center justify-between">
+                            Lights of Esperanza <span class="event-arrow">+</span>
+                        </div>
+                    </button>
+
+                    <!-- Festival de Cascarones -->
+                    <button 
+                        class="event-tab w-full text-left border border-gray-300 rounded-lg px-5 py-4 font-semibold hover:bg-gray-100 transition"
+                        data-title="Festival de Cascarones"
+                        data-image="img/acm-sc-fdc.jpg"
+                        data-description="ACM participates in Festivl de Cascarones to engage with students, recruit new members, and promote computer science opportunities at Texas A&M University-San Antonio">
+                        <div class="flex items-center justify-between">
+                            Festival de Cascarones <span class="event-arrow">+</span>
+                        </div>
+                    </button>
                 </div>
-                <div class="flex flex-col  justify-center">
-                    <img src="img/acm-sc-lights-of-esperanza.jpg" class="w-full h-auto rounded-lg">
-                    <h3 class="text-lg font-semibold text-pink-600 text-center mt-5">Lights of Esperanza</h3>
+
+                <div class="lg:col-span-2 rounded-lg overflow-hidden">
+                    <img id="event-image" src="img/acm-sc-group-photo.jpg" alt="JagHacks" class="w-full h-72 object-cover">
+                    <div class="'p-6">
+                        <h3 id="event-title" class="'text-xl font-bold text-pink-600 mb-3">JagHacks</h3>
+                        <p id="event-description" class="leading-relaxed">
+                            JagHacks is ACM's annual hackathon at Texas A&M University-San Antonio where
+                            students collaborate to build innovative software, web applications, mobile apps,
+                            cybersecurity projects, artificial intelligence solutions, and other technology
+                            projects while gaining valuable teamwork and problem-solving experience.
+                        </p>
+                    </div>
                 </div>
-                <div class="flex flex-col  justify-center">
-                    <img src="img/acm-sc-fdc.jpg" class="w-full h-auto rounded-lg">
-                    <h3 class="text-lg font-semibold text-pink-600 text-center mt-5">Festival De Cascarones</h3>
-                </div>
-            </div><br><br>
-            <div>
-                <p class="text-xl font-bold mb-5">JagHacks</p>
-                <p>
-                    JagHacks is ACM's annual hackathon at Texas A&M University-San Antonio where students
-                    collaborate to build innovative software, web applications, mobile apps, cybersecurity
-                    projects, artificial intelligence solutions, and other technology projects while
-                    gaining valuable teamwork and problem-solving experience.
-                </p><br>
-                <p class="text-xl font-bold mb-5">Lights of Esperanza</p>
-                <p>
-                    ACM members volunteer at Lights of Esperanza to support the local San Antonio community
-                    while building leadership, teamwork, and service experience.
-                </p><br>
-                <p class="text-xl font-bold mb-5">Festival de Cascarones</p>
-                <p>
-                    ACM participates in Festivl de Cascarones to engage with students, recruit new members,
-                    and promote computer science opportunities at Texas A&M University-San Antonio.
-                </p>
             </div>
         </section>
     </main>
@@ -241,5 +258,7 @@
 
         </div>
     </footer>
+
+    <script src="assets/accordion-image.js"></script>
 </body>
 </html>
